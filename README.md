@@ -1,5 +1,7 @@
 # AIOps Incident Copilot
 
+[![CI](https://github.com/AroneBenedict/aiops-incident-copilot/actions/workflows/ci.yml/badge.svg)](https://github.com/AroneBenedict/aiops-incident-copilot/actions/workflows/ci.yml)
+
 Detects anomalies in service telemetry, groups the resulting alarms into incidents, finds the
 root-cause service, names the fault, and hands the on-call engineer a report that cites the
 right runbook. A tool-calling agent runs the investigation; it can read everything and change
@@ -138,8 +140,8 @@ Guardrails that hold for both planners:
 
 - **Tests:** 83 unit and integration tests, 98% line coverage. They include reproducibility
   (same seed, same numbers), causality of features, and adversarial planners.
-- **CI:** `.github/workflows/ci.yml` runs lint, tests with a 90% coverage gate, a pipeline
-  smoke run and a container build.
+- **CI:** GitHub Actions runs lint, the tests with a 90% coverage gate and a pipeline smoke
+  run on Python 3.11 and 3.13, then builds the container image.
 - **Experiment tracking:** every pipeline run appends its config, seeds and results to
   `results/runs.jsonl`.
 - **Observability:** `/metrics` exposes request counts, latency, investigations and tool
@@ -161,10 +163,8 @@ Design notes and the defects found along the way are in [`docs/DESIGN.md`](docs/
 - **Faults always flow from a dependency to its callers.** Two overlapping faults where one
   root depends on the other cannot be separated by the root split.
 - **A false alarm on a dependency can be blamed** as the root of a real incident upstream.
-- **CI and container are verified locally, not yet on GitHub.** The CI steps (install, lint,
-  tests with the coverage gate, smoke run) pass in a clean Python 3.11 environment, and the
-  Dockerfile's install and start-up commands pass on Python 3.12. The workflow has not yet run
-  on GitHub Actions and the container image itself has not been built.
+- **The container image is built in CI but not deployed anywhere.** There is no hosted
+  instance of the service.
 
 ## How this was built
 
