@@ -1,0 +1,1229 @@
+{
+  "seeds": [
+    7,
+    11,
+    13,
+    17,
+    19
+  ],
+  "summary": {
+    "detection_f1": {
+      "mean": 0.8245,
+      "std": 0.0114,
+      "min": 0.8109,
+      "max": 0.8416
+    },
+    "detection_f1_rolling_baseline": {
+      "mean": 0.4377,
+      "std": 0.0218,
+      "min": 0.4052,
+      "max": 0.463
+    },
+    "detection_f1_isolation_forest": {
+      "mean": 0.7724,
+      "std": 0.0204,
+      "min": 0.7467,
+      "max": 0.7937
+    },
+    "detection_f1_seasonal_residual": {
+      "mean": 0.8245,
+      "std": 0.0114,
+      "min": 0.8109,
+      "max": 0.8416
+    },
+    "event_recall": {
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "median_delay_min": {
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "alarm_level_incident_recall": {
+      "mean": 0.9631,
+      "std": 0.0163,
+      "min": 0.9346,
+      "max": 0.9839
+    },
+    "noise_reduction": {
+      "mean": 0.5494,
+      "std": 0.0294,
+      "min": 0.525,
+      "max": 0.6055
+    },
+    "correlation_ari_time_only": {
+      "mean": 0.7818,
+      "std": 0.0337,
+      "min": 0.7303,
+      "max": 0.8254
+    },
+    "correlation_ari_time_and_topology": {
+      "mean": 0.8207,
+      "std": 0.0295,
+      "min": 0.7716,
+      "max": 0.8475
+    },
+    "correlation_ari_root_split": {
+      "mean": 0.9232,
+      "std": 0.0179,
+      "min": 0.9033,
+      "max": 0.9497
+    },
+    "rca_top1_random_walk": {
+      "mean": 0.9098,
+      "std": 0.0207,
+      "min": 0.875,
+      "max": 0.94
+    },
+    "rca_top1_earliest_alarm": {
+      "mean": 0.8655,
+      "std": 0.0284,
+      "min": 0.8269,
+      "max": 0.91
+    },
+    "rca_top1_peak_score": {
+      "mean": 0.8917,
+      "std": 0.0287,
+      "min": 0.8654,
+      "max": 0.9327
+    },
+    "rca_top3_random_walk": {
+      "mean": 0.9873,
+      "std": 0.0121,
+      "min": 0.9712,
+      "max": 1.0
+    },
+    "fault_accuracy_random_forest": {
+      "mean": 0.8794,
+      "std": 0.0174,
+      "min": 0.8654,
+      "max": 0.9135
+    },
+    "fault_macro_f1_random_forest": {
+      "mean": 0.8664,
+      "std": 0.0228,
+      "min": 0.8429,
+      "max": 0.9091
+    },
+    "fault_accuracy_kind_lookup": {
+      "mean": 0.6019,
+      "std": 0.0444,
+      "min": 0.5481,
+      "max": 0.67
+    },
+    "retrieval_hit1_tfidf": {
+      "mean": 0.8059,
+      "std": 0.043,
+      "min": 0.7404,
+      "max": 0.8689
+    },
+    "retrieval_hit1_bm25": {
+      "mean": 0.8081,
+      "std": 0.0388,
+      "min": 0.7404,
+      "max": 0.8607
+    },
+    "retrieval_paraphrased_hit1_tfidf": {
+      "mean": 0.8125,
+      "std": 0.0,
+      "min": 0.8125,
+      "max": 0.8125
+    },
+    "retrieval_paraphrased_hit3_tfidf": {
+      "mean": 0.9688,
+      "std": 0.0,
+      "min": 0.9688,
+      "max": 0.9688
+    },
+    "retrieval_paraphrased_hit1_bm25": {
+      "mean": 0.8125,
+      "std": 0.0,
+      "min": 0.8125,
+      "max": 0.8125
+    },
+    "agent_root_cause_accuracy": {
+      "mean": 0.9093,
+      "std": 0.0133,
+      "min": 0.8846,
+      "max": 0.9231
+    },
+    "agent_fault_type_accuracy": {
+      "mean": 0.9094,
+      "std": 0.0128,
+      "min": 0.8846,
+      "max": 0.92
+    },
+    "agent_runbook_accuracy": {
+      "mean": 0.9094,
+      "std": 0.0128,
+      "min": 0.8846,
+      "max": 0.92
+    },
+    "agent_fully_correct": {
+      "mean": 0.9055,
+      "std": 0.0114,
+      "min": 0.8846,
+      "max": 0.918
+    },
+    "agent_end_to_end_fully_correct": {
+      "mean": 0.872,
+      "std": 0.0179,
+      "min": 0.8505,
+      "max": 0.9032
+    },
+    "agent_avg_tool_calls": {
+      "mean": 7.412,
+      "std": 0.1261,
+      "min": 7.25,
+      "max": 7.56
+    },
+    "agent_fully_correct_with_logs": {
+      "mean": 0.9305,
+      "std": 0.0177,
+      "min": 0.9054,
+      "max": 0.9595
+    },
+    "agent_fully_correct_without_logs": {
+      "mean": 0.8263,
+      "std": 0.0396,
+      "min": 0.7667,
+      "max": 0.8889
+    },
+    "detection_f1_lstm_autoencoder": {
+      "mean": 0.7553,
+      "std": 0.0298,
+      "min": 0.7004,
+      "max": 0.7888
+    }
+  },
+  "confidence_calibration": {
+    "high": {
+      "n": 270,
+      "accuracy": 0.9185
+    },
+    "medium": {
+      "n": 207,
+      "accuracy": 0.9131
+    },
+    "low": {
+      "n": 54,
+      "accuracy": 0.8148
+    }
+  },
+  "per_seed": [
+    {
+      "config": {
+        "seed": 7,
+        "fingerprint": "f2bbfbde44"
+      },
+      "data": {
+        "services": 14,
+        "minutes": 50400,
+        "history_incidents": 128,
+        "test_incidents": 107,
+        "log_lines": 21294
+      },
+      "detection": {
+        "selected": "seasonal_residual",
+        "detectors": {
+          "rolling_zscore": {
+            "threshold": 2.1329,
+            "history_f1": 0.414,
+            "precision": 0.4919,
+            "recall": 0.365,
+            "f1": 0.4191,
+            "incidents": 107,
+            "detected": 107,
+            "event_recall": 1.0,
+            "median_delay_min": 0.0,
+            "seconds": 0.41
+          },
+          "seasonal_residual": {
+            "threshold": 2.0433,
+            "history_f1": 0.8171,
+            "precision": 0.8018,
+            "recall": 0.8593,
+            "f1": 0.8296,
+            "incidents": 107,
+            "detected": 107,
+            "event_recall": 1.0,
+            "median_delay_min": 1.0,
+            "seconds": 0.22
+          },
+          "isolation_forest": {
+            "threshold": 0.5572,
+            "history_f1": 0.7857,
+            "precision": 0.7334,
+            "recall": 0.8648,
+            "f1": 0.7937,
+            "incidents": 107,
+            "detected": 107,
+            "event_recall": 1.0,
+            "median_delay_min": 1.0,
+            "seconds": 5.64
+          },
+          "lstm_autoencoder": {
+            "threshold": 1.3651,
+            "history_f1": 0.718,
+            "precision": 0.8046,
+            "recall": 0.7344,
+            "f1": 0.7679,
+            "incidents": 107,
+            "detected": 107,
+            "event_recall": 1.0,
+            "median_delay_min": 0.0,
+            "seconds": 12.94
+          }
+        },
+        "alarm_level_incident_recall": 0.9346
+      },
+      "correlation": {
+        "selected": "time_topology_root_split",
+        "false_alarms_per_day": 7.14,
+        "methods": {
+          "time_only": {
+            "history_ari": 0.7373,
+            "alarms": 400,
+            "groups": 145,
+            "noise_reduction": 0.6375,
+            "ari": 0.8073
+          },
+          "time_and_topology": {
+            "history_ari": 0.7868,
+            "alarms": 400,
+            "groups": 168,
+            "noise_reduction": 0.58,
+            "ari": 0.8359
+          },
+          "time_topology_root_split": {
+            "history_ari": 0.9284,
+            "alarms": 400,
+            "groups": 190,
+            "noise_reduction": 0.525,
+            "ari": 0.9363
+          }
+        }
+      },
+      "root_cause": {
+        "selected": "peak_score",
+        "methods": {
+          "earliest_alarm": {
+            "history_top1": 0.872,
+            "scored": 100,
+            "top1": 0.91,
+            "top3": 0.99,
+            "end_to_end_top1": 0.8505
+          },
+          "peak_score": {
+            "history_top1": 0.952,
+            "scored": 100,
+            "top1": 0.92,
+            "top3": 1.0,
+            "end_to_end_top1": 0.8598
+          },
+          "random_walk": {
+            "history_top1": 0.944,
+            "scored": 100,
+            "top1": 0.94,
+            "top3": 1.0,
+            "end_to_end_top1": 0.8785
+          }
+        }
+      },
+      "fault_classification": {
+        "train_incidents": 124,
+        "random_forest": {
+          "n": 100,
+          "accuracy": 0.87,
+          "macro_f1": 0.8524
+        },
+        "kind_lookup_baseline": {
+          "n": 100,
+          "accuracy": 0.67,
+          "macro_f1": 0.6288
+        },
+        "majority_baseline": {
+          "n": 100,
+          "accuracy": 0.1,
+          "macro_f1": 0.0227
+        }
+      },
+      "retrieval": {
+        "selected": "bm25",
+        "runbooks": 12,
+        "retrievers": {
+          "tfidf": {
+            "history_mrr": 0.8363,
+            "n": 100,
+            "hit1": 0.8,
+            "hit3": 0.85,
+            "mrr": 0.834
+          },
+          "bm25": {
+            "history_mrr": 0.8421,
+            "n": 100,
+            "hit1": 0.81,
+            "hit3": 0.89,
+            "mrr": 0.8512
+          }
+        },
+        "paraphrased_queries": {
+          "tfidf": {
+            "n": 32,
+            "hit1": 0.8125,
+            "hit3": 0.9688,
+            "mrr": 0.8854
+          },
+          "bm25": {
+            "n": 32,
+            "hit1": 0.8125,
+            "hit3": 0.9688,
+            "mrr": 0.8854
+          }
+        }
+      },
+      "agent": {
+        "planner": "rule",
+        "investigated": 100,
+        "completed": 100,
+        "avg_tool_calls": 7.36,
+        "log_check_changed_root": 5,
+        "root_cause_accuracy": 0.91,
+        "fault_type_accuracy": 0.92,
+        "runbook_accuracy": 0.92,
+        "fully_correct": 0.91,
+        "end_to_end_fully_correct": 0.8505,
+        "fully_correct_with_logs": 0.9367,
+        "fully_correct_without_logs": 0.8095,
+        "incidents_without_logs": 21,
+        "fully_correct_by_confidence": {
+          "high": {
+            "n": 26,
+            "accuracy": 1.0
+          },
+          "medium": {
+            "n": 54,
+            "accuracy": 0.8704
+          },
+          "low": {
+            "n": 20,
+            "accuracy": 0.9
+          }
+        }
+      },
+      "seconds": 26.4
+    },
+    {
+      "config": {
+        "seed": 11,
+        "fingerprint": "0dce225b39"
+      },
+      "data": {
+        "services": 14,
+        "minutes": 50400,
+        "history_incidents": 132,
+        "test_incidents": 105,
+        "log_lines": 21467
+      },
+      "detection": {
+        "selected": "seasonal_residual",
+        "detectors": {
+          "rolling_zscore": {
+            "threshold": 2.1816,
+            "history_f1": 0.4488,
+            "precision": 0.5538,
+            "recall": 0.3813,
+            "f1": 0.4516,
+            "incidents": 105,
+            "detected": 105,
+            "event_recall": 1.0,
+            "median_delay_min": 0.0,
+            "seconds": 0.41
+          },
+          "seasonal_residual": {
+            "threshold": 2.0936,
+            "history_f1": 0.8321,
+            "precision": 0.8018,
+            "recall": 0.8553,
+            "f1": 0.8277,
+            "incidents": 105,
+            "detected": 105,
+            "event_recall": 1.0,
+            "median_delay_min": 1.0,
+            "seconds": 0.23
+          },
+          "isolation_forest": {
+            "threshold": 0.5777,
+            "history_f1": 0.8008,
+            "precision": 0.7655,
+            "recall": 0.8142,
+            "f1": 0.7891,
+            "incidents": 105,
+            "detected": 105,
+            "event_recall": 1.0,
+            "median_delay_min": 1.0,
+            "seconds": 6.01
+          },
+          "lstm_autoencoder": {
+            "threshold": 1.3852,
+            "history_f1": 0.7952,
+            "precision": 0.8281,
+            "recall": 0.7531,
+            "f1": 0.7888,
+            "incidents": 105,
+            "detected": 103,
+            "event_recall": 0.981,
+            "median_delay_min": 0.0,
+            "seconds": 11.14
+          }
+        },
+        "alarm_level_incident_recall": 0.9619
+      },
+      "correlation": {
+        "selected": "time_topology_root_split",
+        "false_alarms_per_day": 6.71,
+        "methods": {
+          "time_only": {
+            "history_ari": 0.6749,
+            "alarms": 409,
+            "groups": 145,
+            "noise_reduction": 0.6455,
+            "ari": 0.7303
+          },
+          "time_and_topology": {
+            "history_ari": 0.7538,
+            "alarms": 409,
+            "groups": 163,
+            "noise_reduction": 0.6015,
+            "ari": 0.7716
+          },
+          "time_topology_root_split": {
+            "history_ari": 0.881,
+            "alarms": 409,
+            "groups": 184,
+            "noise_reduction": 0.5501,
+            "ari": 0.9215
+          }
+        }
+      },
+      "root_cause": {
+        "selected": "random_walk",
+        "methods": {
+          "earliest_alarm": {
+            "history_top1": 0.8,
+            "scored": 101,
+            "top1": 0.8713,
+            "top3": 0.9901,
+            "end_to_end_top1": 0.8381
+          },
+          "peak_score": {
+            "history_top1": 0.824,
+            "scored": 101,
+            "top1": 0.8713,
+            "top3": 0.9901,
+            "end_to_end_top1": 0.8381
+          },
+          "random_walk": {
+            "history_top1": 0.88,
+            "scored": 101,
+            "top1": 0.9109,
+            "top3": 0.9901,
+            "end_to_end_top1": 0.8762
+          }
+        }
+      },
+      "fault_classification": {
+        "train_incidents": 122,
+        "random_forest": {
+          "n": 101,
+          "accuracy": 0.8713,
+          "macro_f1": 0.8429
+        },
+        "kind_lookup_baseline": {
+          "n": 101,
+          "accuracy": 0.6337,
+          "macro_f1": 0.5256
+        },
+        "majority_baseline": {
+          "n": 101,
+          "accuracy": 0.1683,
+          "macro_f1": 0.036
+        }
+      },
+      "retrieval": {
+        "selected": "tfidf",
+        "runbooks": 12,
+        "retrievers": {
+          "tfidf": {
+            "history_mrr": 0.9117,
+            "n": 101,
+            "hit1": 0.8317,
+            "hit3": 0.8713,
+            "mrr": 0.8635
+          },
+          "bm25": {
+            "history_mrr": 0.9113,
+            "n": 101,
+            "hit1": 0.8218,
+            "hit3": 0.8812,
+            "mrr": 0.8584
+          }
+        },
+        "paraphrased_queries": {
+          "tfidf": {
+            "n": 32,
+            "hit1": 0.8125,
+            "hit3": 0.9688,
+            "mrr": 0.8854
+          },
+          "bm25": {
+            "n": 32,
+            "hit1": 0.8125,
+            "hit3": 0.9688,
+            "mrr": 0.8854
+          }
+        }
+      },
+      "agent": {
+        "planner": "rule",
+        "investigated": 101,
+        "completed": 101,
+        "avg_tool_calls": 7.33,
+        "log_check_changed_root": 2,
+        "root_cause_accuracy": 0.9109,
+        "fault_type_accuracy": 0.9109,
+        "runbook_accuracy": 0.9109,
+        "fully_correct": 0.9109,
+        "end_to_end_fully_correct": 0.8762,
+        "fully_correct_with_logs": 0.9277,
+        "fully_correct_without_logs": 0.8333,
+        "incidents_without_logs": 18,
+        "fully_correct_by_confidence": {
+          "high": {
+            "n": 74,
+            "accuracy": 0.9189
+          },
+          "medium": {
+            "n": 22,
+            "accuracy": 0.9545
+          },
+          "low": {
+            "n": 5,
+            "accuracy": 0.6
+          }
+        }
+      },
+      "seconds": 24.4
+    },
+    {
+      "config": {
+        "seed": 13,
+        "fingerprint": "0deb6d5722"
+      },
+      "data": {
+        "services": 14,
+        "minutes": 50400,
+        "history_incidents": 116,
+        "test_incidents": 107,
+        "log_lines": 20405
+      },
+      "detection": {
+        "selected": "seasonal_residual",
+        "detectors": {
+          "rolling_zscore": {
+            "threshold": 2.2172,
+            "history_f1": 0.444,
+            "precision": 0.5909,
+            "recall": 0.3806,
+            "f1": 0.463,
+            "incidents": 107,
+            "detected": 107,
+            "event_recall": 1.0,
+            "median_delay_min": 0.0,
+            "seconds": 0.36
+          },
+          "seasonal_residual": {
+            "threshold": 2.0883,
+            "history_f1": 0.8193,
+            "precision": 0.7919,
+            "recall": 0.8351,
+            "f1": 0.8129,
+            "incidents": 107,
+            "detected": 107,
+            "event_recall": 1.0,
+            "median_delay_min": 1.0,
+            "seconds": 0.21
+          },
+          "isolation_forest": {
+            "threshold": 0.5641,
+            "history_f1": 0.7644,
+            "precision": 0.7279,
+            "recall": 0.7711,
+            "f1": 0.7488,
+            "incidents": 107,
+            "detected": 107,
+            "event_recall": 1.0,
+            "median_delay_min": 1.0,
+            "seconds": 5.99
+          },
+          "lstm_autoencoder": {
+            "threshold": 1.3844,
+            "history_f1": 0.759,
+            "precision": 0.7719,
+            "recall": 0.7327,
+            "f1": 0.7518,
+            "incidents": 107,
+            "detected": 107,
+            "event_recall": 1.0,
+            "median_delay_min": 1.0,
+            "seconds": 12.29
+          }
+        },
+        "alarm_level_incident_recall": 0.972
+      },
+      "correlation": {
+        "selected": "time_topology_root_split",
+        "false_alarms_per_day": 6.79,
+        "methods": {
+          "time_only": {
+            "history_ari": 0.7877,
+            "alarms": 403,
+            "groups": 153,
+            "noise_reduction": 0.6203,
+            "ari": 0.8254
+          },
+          "time_and_topology": {
+            "history_ari": 0.8013,
+            "alarms": 403,
+            "groups": 175,
+            "noise_reduction": 0.5658,
+            "ari": 0.8475
+          },
+          "time_topology_root_split": {
+            "history_ari": 0.8748,
+            "alarms": 403,
+            "groups": 190,
+            "noise_reduction": 0.5285,
+            "ari": 0.9033
+          }
+        }
+      },
+      "root_cause": {
+        "selected": "random_walk",
+        "methods": {
+          "earliest_alarm": {
+            "history_top1": 0.8571,
+            "scored": 104,
+            "top1": 0.8269,
+            "top3": 0.9327,
+            "end_to_end_top1": 0.8037
+          },
+          "peak_score": {
+            "history_top1": 0.8661,
+            "scored": 104,
+            "top1": 0.8654,
+            "top3": 0.9712,
+            "end_to_end_top1": 0.8411
+          },
+          "random_walk": {
+            "history_top1": 0.9196,
+            "scored": 104,
+            "top1": 0.875,
+            "top3": 0.9712,
+            "end_to_end_top1": 0.8505
+          }
+        }
+      },
+      "fault_classification": {
+        "train_incidents": 110,
+        "random_forest": {
+          "n": 104,
+          "accuracy": 0.8654,
+          "macro_f1": 0.8609
+        },
+        "kind_lookup_baseline": {
+          "n": 104,
+          "accuracy": 0.5673,
+          "macro_f1": 0.4821
+        },
+        "majority_baseline": {
+          "n": 104,
+          "accuracy": 0.125,
+          "macro_f1": 0.0278
+        }
+      },
+      "retrieval": {
+        "selected": "bm25",
+        "runbooks": 12,
+        "retrievers": {
+          "tfidf": {
+            "history_mrr": 0.913,
+            "n": 104,
+            "hit1": 0.7404,
+            "hit3": 0.8173,
+            "mrr": 0.7875
+          },
+          "bm25": {
+            "history_mrr": 0.9217,
+            "n": 104,
+            "hit1": 0.7404,
+            "hit3": 0.8365,
+            "mrr": 0.7933
+          }
+        },
+        "paraphrased_queries": {
+          "tfidf": {
+            "n": 32,
+            "hit1": 0.8125,
+            "hit3": 0.9688,
+            "mrr": 0.8854
+          },
+          "bm25": {
+            "n": 32,
+            "hit1": 0.8125,
+            "hit3": 0.9688,
+            "mrr": 0.8854
+          }
+        }
+      },
+      "agent": {
+        "planner": "rule",
+        "investigated": 104,
+        "completed": 104,
+        "avg_tool_calls": 7.56,
+        "log_check_changed_root": 3,
+        "root_cause_accuracy": 0.8846,
+        "fault_type_accuracy": 0.8846,
+        "runbook_accuracy": 0.8846,
+        "fully_correct": 0.8846,
+        "end_to_end_fully_correct": 0.8598,
+        "fully_correct_with_logs": 0.9054,
+        "fully_correct_without_logs": 0.8333,
+        "incidents_without_logs": 30,
+        "fully_correct_by_confidence": {
+          "high": {
+            "n": 68,
+            "accuracy": 0.8824
+          },
+          "medium": {
+            "n": 33,
+            "accuracy": 0.9394
+          },
+          "low": {
+            "n": 3,
+            "accuracy": 0.3333
+          }
+        }
+      },
+      "seconds": 24.5
+    },
+    {
+      "config": {
+        "seed": 17,
+        "fingerprint": "16907e4be8"
+      },
+      "data": {
+        "services": 14,
+        "minutes": 50400,
+        "history_incidents": 90,
+        "test_incidents": 124,
+        "log_lines": 20777
+      },
+      "detection": {
+        "selected": "seasonal_residual",
+        "detectors": {
+          "rolling_zscore": {
+            "threshold": 2.2335,
+            "history_f1": 0.4031,
+            "precision": 0.6387,
+            "recall": 0.3466,
+            "f1": 0.4494,
+            "incidents": 124,
+            "detected": 123,
+            "event_recall": 0.9919,
+            "median_delay_min": 0.0,
+            "seconds": 0.39
+          },
+          "seasonal_residual": {
+            "threshold": 2.1075,
+            "history_f1": 0.825,
+            "precision": 0.829,
+            "recall": 0.8546,
+            "f1": 0.8416,
+            "incidents": 124,
+            "detected": 124,
+            "event_recall": 1.0,
+            "median_delay_min": 1.0,
+            "seconds": 0.21
+          },
+          "isolation_forest": {
+            "threshold": 0.5651,
+            "history_f1": 0.7827,
+            "precision": 0.7626,
+            "recall": 0.8061,
+            "f1": 0.7837,
+            "incidents": 124,
+            "detected": 124,
+            "event_recall": 1.0,
+            "median_delay_min": 1.0,
+            "seconds": 6.13
+          },
+          "lstm_autoencoder": {
+            "threshold": 1.4227,
+            "history_f1": 0.7595,
+            "precision": 0.8149,
+            "recall": 0.7251,
+            "f1": 0.7674,
+            "incidents": 124,
+            "detected": 124,
+            "event_recall": 1.0,
+            "median_delay_min": 0.0,
+            "seconds": 11.28
+          }
+        },
+        "alarm_level_incident_recall": 0.9839
+      },
+      "correlation": {
+        "selected": "time_topology_root_split",
+        "false_alarms_per_day": 5.5,
+        "methods": {
+          "time_only": {
+            "history_ari": 0.8775,
+            "alarms": 474,
+            "groups": 136,
+            "noise_reduction": 0.7131,
+            "ari": 0.7603
+          },
+          "time_and_topology": {
+            "history_ari": 0.8924,
+            "alarms": 474,
+            "groups": 158,
+            "noise_reduction": 0.6667,
+            "ari": 0.8024
+          },
+          "time_topology_root_split": {
+            "history_ari": 0.9528,
+            "alarms": 474,
+            "groups": 187,
+            "noise_reduction": 0.6055,
+            "ari": 0.9051
+          }
+        }
+      },
+      "root_cause": {
+        "selected": "random_walk",
+        "methods": {
+          "earliest_alarm": {
+            "history_top1": 0.8977,
+            "scored": 122,
+            "top1": 0.8443,
+            "top3": 0.9672,
+            "end_to_end_top1": 0.8306
+          },
+          "peak_score": {
+            "history_top1": 0.9432,
+            "scored": 122,
+            "top1": 0.8689,
+            "top3": 0.9836,
+            "end_to_end_top1": 0.8548
+          },
+          "random_walk": {
+            "history_top1": 0.9545,
+            "scored": 122,
+            "top1": 0.9098,
+            "top3": 0.9754,
+            "end_to_end_top1": 0.8952
+          }
+        }
+      },
+      "fault_classification": {
+        "train_incidents": 88,
+        "random_forest": {
+          "n": 122,
+          "accuracy": 0.877,
+          "macro_f1": 0.8666
+        },
+        "kind_lookup_baseline": {
+          "n": 122,
+          "accuracy": 0.5902,
+          "macro_f1": 0.4778
+        },
+        "majority_baseline": {
+          "n": 122,
+          "accuracy": 0.1148,
+          "macro_f1": 0.0257
+        }
+      },
+      "retrieval": {
+        "selected": "tfidf",
+        "runbooks": 12,
+        "retrievers": {
+          "tfidf": {
+            "history_mrr": 0.8653,
+            "n": 122,
+            "hit1": 0.8689,
+            "hit3": 0.9098,
+            "mrr": 0.8943
+          },
+          "bm25": {
+            "history_mrr": 0.8574,
+            "n": 122,
+            "hit1": 0.8607,
+            "hit3": 0.918,
+            "mrr": 0.8943
+          }
+        },
+        "paraphrased_queries": {
+          "tfidf": {
+            "n": 32,
+            "hit1": 0.8125,
+            "hit3": 0.9688,
+            "mrr": 0.8854
+          },
+          "bm25": {
+            "n": 32,
+            "hit1": 0.8125,
+            "hit3": 0.9688,
+            "mrr": 0.8854
+          }
+        }
+      },
+      "agent": {
+        "planner": "rule",
+        "investigated": 122,
+        "completed": 122,
+        "avg_tool_calls": 7.25,
+        "log_check_changed_root": 1,
+        "root_cause_accuracy": 0.918,
+        "fault_type_accuracy": 0.918,
+        "runbook_accuracy": 0.918,
+        "fully_correct": 0.918,
+        "end_to_end_fully_correct": 0.9032,
+        "fully_correct_with_logs": 0.9231,
+        "fully_correct_without_logs": 0.8889,
+        "incidents_without_logs": 18,
+        "fully_correct_by_confidence": {
+          "high": {
+            "n": 87,
+            "accuracy": 0.908
+          },
+          "medium": {
+            "n": 33,
+            "accuracy": 0.9394
+          },
+          "low": {
+            "n": 2,
+            "accuracy": 1.0
+          }
+        }
+      },
+      "seconds": 24.4
+    },
+    {
+      "config": {
+        "seed": 19,
+        "fingerprint": "7a4d6fa4d8"
+      },
+      "data": {
+        "services": 14,
+        "minutes": 50400,
+        "history_incidents": 128,
+        "test_incidents": 108,
+        "log_lines": 20770
+      },
+      "detection": {
+        "selected": "seasonal_residual",
+        "detectors": {
+          "rolling_zscore": {
+            "threshold": 2.1916,
+            "history_f1": 0.4478,
+            "precision": 0.5119,
+            "recall": 0.3353,
+            "f1": 0.4052,
+            "incidents": 108,
+            "detected": 108,
+            "event_recall": 1.0,
+            "median_delay_min": 0.0,
+            "seconds": 0.39
+          },
+          "seasonal_residual": {
+            "threshold": 2.1457,
+            "history_f1": 0.8218,
+            "precision": 0.8005,
+            "recall": 0.8216,
+            "f1": 0.8109,
+            "incidents": 108,
+            "detected": 108,
+            "event_recall": 1.0,
+            "median_delay_min": 1.0,
+            "seconds": 0.22
+          },
+          "isolation_forest": {
+            "threshold": 0.5543,
+            "history_f1": 0.7807,
+            "precision": 0.7059,
+            "recall": 0.7926,
+            "f1": 0.7467,
+            "incidents": 108,
+            "detected": 108,
+            "event_recall": 1.0,
+            "median_delay_min": 1.0,
+            "seconds": 6.27
+          },
+          "lstm_autoencoder": {
+            "threshold": 1.3393,
+            "history_f1": 0.7172,
+            "precision": 0.7437,
+            "recall": 0.6619,
+            "f1": 0.7004,
+            "incidents": 108,
+            "detected": 108,
+            "event_recall": 1.0,
+            "median_delay_min": 0.0,
+            "seconds": 13.03
+          }
+        },
+        "alarm_level_incident_recall": 0.963
+      },
+      "correlation": {
+        "selected": "time_topology_root_split",
+        "false_alarms_per_day": 6.43,
+        "methods": {
+          "time_only": {
+            "history_ari": 0.7508,
+            "alarms": 394,
+            "groups": 147,
+            "noise_reduction": 0.6269,
+            "ari": 0.7856
+          },
+          "time_and_topology": {
+            "history_ari": 0.8112,
+            "alarms": 394,
+            "groups": 166,
+            "noise_reduction": 0.5787,
+            "ari": 0.8461
+          },
+          "time_topology_root_split": {
+            "history_ari": 0.9123,
+            "alarms": 394,
+            "groups": 182,
+            "noise_reduction": 0.5381,
+            "ari": 0.9497
+          }
+        }
+      },
+      "root_cause": {
+        "selected": "peak_score",
+        "methods": {
+          "earliest_alarm": {
+            "history_top1": 0.8455,
+            "scored": 104,
+            "top1": 0.875,
+            "top3": 0.9808,
+            "end_to_end_top1": 0.8426
+          },
+          "peak_score": {
+            "history_top1": 0.9431,
+            "scored": 104,
+            "top1": 0.9327,
+            "top3": 1.0,
+            "end_to_end_top1": 0.8981
+          },
+          "random_walk": {
+            "history_top1": 0.9268,
+            "scored": 104,
+            "top1": 0.9135,
+            "top3": 1.0,
+            "end_to_end_top1": 0.8796
+          }
+        }
+      },
+      "fault_classification": {
+        "train_incidents": 122,
+        "random_forest": {
+          "n": 104,
+          "accuracy": 0.9135,
+          "macro_f1": 0.9091
+        },
+        "kind_lookup_baseline": {
+          "n": 104,
+          "accuracy": 0.5481,
+          "macro_f1": 0.5222
+        },
+        "majority_baseline": {
+          "n": 104,
+          "accuracy": 0.0673,
+          "macro_f1": 0.0158
+        }
+      },
+      "retrieval": {
+        "selected": "bm25",
+        "runbooks": 12,
+        "retrievers": {
+          "tfidf": {
+            "history_mrr": 0.8684,
+            "n": 104,
+            "hit1": 0.7885,
+            "hit3": 0.875,
+            "mrr": 0.8369
+          },
+          "bm25": {
+            "history_mrr": 0.8758,
+            "n": 104,
+            "hit1": 0.8077,
+            "hit3": 0.8462,
+            "mrr": 0.8447
+          }
+        },
+        "paraphrased_queries": {
+          "tfidf": {
+            "n": 32,
+            "hit1": 0.8125,
+            "hit3": 0.9688,
+            "mrr": 0.8854
+          },
+          "bm25": {
+            "n": 32,
+            "hit1": 0.8125,
+            "hit3": 0.9688,
+            "mrr": 0.8854
+          }
+        }
+      },
+      "agent": {
+        "planner": "rule",
+        "investigated": 104,
+        "completed": 104,
+        "avg_tool_calls": 7.56,
+        "log_check_changed_root": 7,
+        "root_cause_accuracy": 0.9231,
+        "fault_type_accuracy": 0.9135,
+        "runbook_accuracy": 0.9135,
+        "fully_correct": 0.9038,
+        "end_to_end_fully_correct": 0.8704,
+        "fully_correct_with_logs": 0.9595,
+        "fully_correct_without_logs": 0.7667,
+        "incidents_without_logs": 30,
+        "fully_correct_by_confidence": {
+          "high": {
+            "n": 15,
+            "accuracy": 1.0
+          },
+          "medium": {
+            "n": 65,
+            "accuracy": 0.9077
+          },
+          "low": {
+            "n": 24,
+            "accuracy": 0.8333
+          }
+        }
+      },
+      "seconds": 25.7
+    }
+  ]
+}
